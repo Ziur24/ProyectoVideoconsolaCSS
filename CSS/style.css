@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#cntPadre{
+    display: flex;
+    margin: 4em auto 0em auto;
+
+    width: 80em;
+    height: 50em;
+    background-color: beige;
+}
+
+#capaInferior{
+    
+    margin: 8em auto 0em auto;
+    width: 70em;
+    height: 30em;
+    background-color:red;
+    border-radius: 10% / 130%;
+    border-style: solid;
+    border-color: rgb(199, 192, 192);
+    border-width: 1em;
+}
+
+capaSuperior{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    width: 65em;
+    height: 30em;
+    margin: 8em auto 0em 8em;
+    background-color: rgb(44, 41, 41);
+    border-radius: 10% / 130%;
+    border-style: solid;
+    border-color: rgb(26, 22, 22);
+    border-width: 0.2em;
+    padding: 0;
+   
+}
+
+#circuloDerecho{
+    position: absolute;
+    width: 72em;
+    height: 72em;
+    margin-top: -12.8em;
+    margin-left: 4.7em;
+    background-color: rgb(44, 41, 41);
+    border-radius: 50%;
+
+}
+
+#pantalla{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    border-radius: 7px;
+    border: rgb(56, 53, 53) 8px inset;
+}
+
+#marca{
+    margin: auto;
+    margin-top: -0.5em;
+    padding: 0;
+    
+    color: rgb(219, 215, 215);
+}
+
+#modelo{
+    margin: auto;
+    margin-bottom: -0.4em;
+    padding: 0;
+    color: rgb(219, 215, 215);
+}
