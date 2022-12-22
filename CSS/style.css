@@ -1,77 +1,305 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
 body{
     background-color: black;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #cntPadre{
     display: flex;
-    margin: 4em auto 0em auto;
-
-    width: 80em;
-    height: 50em;
+    width: 100%;
+    height: 100%;
     background-color: beige;
-}
-
-#capaInferior{
     
-    margin: 8em auto 0em auto;
-    width: 70em;
-    height: 30em;
-    background-color:red;
-    border-radius: 10% / 130%;
-    border-style: solid;
-    border-color: rgb(199, 192, 192);
-    border-width: 1em;
 }
-
-capaSuperior{
-    position:absolute;
+/* Capa inferior consola */
+#capaInferior{
     display: flex;
-    flex-direction: column;
-    width: 65em;
+    flex-direction: row;
+    margin: 12em auto 0em auto; /* 18em */
+}
+.lateralesInferior{
+    width: 5em;
     height: 30em;
-    margin: 8em auto 0em 8em;
-    background-color: rgb(44, 41, 41);
-    border-radius: 10% / 130%;
-    border-style: solid;
-    border-color: rgb(26, 22, 22);
-    border-width: 0.2em;
-    padding: 0;
    
 }
-
-#circuloDerecho{
-    position: absolute;
+#parteIzquierdaInferior{
+    margin: 0em auto 0em auto;
+    overflow: hidden;
+}
+#circuloIzquierdoInferior{
     width: 72em;
     height: 72em;
-    margin-top: -12.8em;
-    margin-left: 4.7em;
+    margin-top: -21em;
+    margin-left: 1.6em;
     background-color: rgb(44, 41, 41);
     border-radius: 50%;
-
 }
-
-#pantalla{
-    width: 70%;
-    height: 100%;
-    background-color: white;
-    margin: auto;
-    border-radius: 7px;
-    border: rgb(56, 53, 53) 8px inset;
+#parteCentralInferior{
+    display: flex;
+    margin: 0em 0em 0em 0em;
+    width: 41em;
+    height: 30em;
+    background-color:rgb(44, 41, 41);
+    background-color: brown;
 }
-
-#marca{
-    margin: auto;
-    margin-top: -0.5em;
-    padding: 0;
+#parteDerechaInferior{
+    margin: 0em auto 0em auto;
+    transform: rotate(180deg);
+    overflow: hidden;
+}
+#circuloDerechoInferior{
+    width: 72em;
+    height: 72em;
+    margin-top: -21em;
+    margin-left: 1.6em;
+    background-color: rgb(44, 41, 41);
+    border-radius: 50%;
+    transform: rotate(180deg);
     
-    color: rgb(219, 215, 215);
 }
 
-#modelo{
-    margin: auto;
-    margin-bottom: -0.4em;
+/* Conjunto pad cruzeta atributos generales*/
+.conjuntoPad{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: rgb(56, 55, 55) 17px solid;
+   
+    
+}
+.padCruzeta{
+    margin: -0.1em 0em 0em -0.1em;
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    border: rgb(207, 206, 206) solid 10px;
+    background-color: rgb(40, 41, 40);
+    /*box-shadow: inset 1em 0.3em 0.1em -0.1em rgb(216, 202, 202);*/
+    
+}
+
+.conjunto1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 9em;
+    height: 9em;
+    margin: 0.25em 0em 0em 0em;
+    
+}
+.conjunto2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -9.1em 0em 0em 0em;
+    width: 9em;
+    height: 9em;
+    transform: rotate(90deg);
+    
+}
+
+/* Conjunto pad cruzetaatributos individuales */
+#conjuntoPadDerecho{
+    margin: 17em 0em 0em 0em;
+}
+#conjuntoPadIzquierdo{
+    margin: 17em 0em 0em 0em; /* -0.1*/
+}
+
+/* Dibujo boton de la cruceta de dirección */
+.botonDireccion1{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 243, 243);
+    width: 2em;
+    height: 2em;
+    margin: -0.1em 0em 0em 1.2em;
+    border-radius: 20%;  
+    
+}
+.botonForma1-1{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 1.2em;
+    height: 2em;
+    margin: 0em 0em 0em 1.6em;
+    overflow: hidden;
+}
+.botonForma1-2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: rgb(245, 243, 243);
+    width: 1.55em;
+    height: 1.55em;
+    margin: 0.22em 0em 0em -0.65em;
+    border-radius: 20%;
+    transform: rotate(45deg);
+}
+.botonDireccion2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 243, 243);
+    width: 2em;
+    height: 2em;
+    margin: 0em 1.2em 0em 0em;
+    border-radius: 20%;
+    transform: rotate(180deg);
+}
+.botonForma2-1{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 1.2em;
+    height: 2em;
+    margin: 0em 0em 0em 1.6em;
+    overflow: hidden;
+}
+.botonForma2-2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: rgb(245, 243, 243);
+    width: 1.55em;
+    height: 1.55em;
+    margin: 0.22em 0em 0em -0.65em;
+    border-radius: 20%;
+    transform: rotate(45deg);
+}
+
+/* Dibujo botones de acción */
+.botonAccion1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 2.3em;
+    height: 2.3em;
+    margin: -0.1em 0em 0em 0.6em;
+    border-radius: 50%;
     padding: 0;
-    color: rgb(219, 215, 215);
+    box-shadow: inset 0.5em 0.8em 0.5em -0.1em rgb(88, 85, 85);
+}
+.botonAccion2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    width: 2.3em;
+    height: 2.3em;
+    margin: 0em 0.6em 0em 0em;
+    border-radius: 50%;
+    box-shadow: inset 1em 0.8em 0.7em -0.1em rgb(88, 85, 85);
+}
+#cuadrado{
+    width: 1em;
+    height: 1em;
+    border: white solid 2px;
+}
+#redonda{
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    border: white solid 2px;
+}
+#triangulo{
+    scale: .08;
+    filter: invert(94%) sepia(19%) saturate(0%) hue-rotate(82deg) brightness(112%) contrast(100%);
+    transform: rotate(90deg);
+    width: 20em;
+    height: 30em;
+    margin-left: -0.2em;
+}
+#equis{
+    scale: .04;
+    filter: invert(94%) sepia(19%) saturate(0%) hue-rotate(82deg) brightness(112%) contrast(100%);
+    transform: rotate(90deg);
+}
+
+
+/* Dibujo Joystick */
+#joystick{
+   
+    width: 6em;
+    height: 6em;
+    margin: 22em 0em 0em 0em;
+    border-radius: 50%;
+    border: black  0.7em solid;
+    background-color: rgb(51, 50, 50);
+    
+}
+#interiorJoystick{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    margin: 1em 0em 0em 1em;
+    background-color: black;
+}
+#selectstart{
+    
+    width: 6em;
+    height: 6em;
+    margin: 22em 0em 0em 2em;
+    border-radius: 50%;
+    border: black  0.7em solid;
+    background-color: rgb(51, 50, 50);
+}
+
+
+/* Capa superior consola */
+#capaSuperior{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin: 12em auto 0em 10em; /* 6 em */
+    display: none;
+}
+.lateralesSuperior{
+    width: 5em;
+    height: 30em;
+  
+}
+#parteIzquierdaSuperior{
+    margin: 0em auto 0em auto;
+    
+    overflow: hidden;
+}
+#circuloIzquierdoSuperior{
+    width: 72em;
+    height: 72em;
+    margin-top: -21em;
+    margin-left: 1.6em;
+    background-color: rgb(44, 41, 41);
+    border-radius: 50%;
+    background-color: coral;
+}
+#parteCentralSuperior{
+    margin: 0em auto 0em auto;
+    width: 50em;
+    height: 30em;
+    background-color: coral;
+}
+#parteDerechaSuperior{
+    margin: 0em auto 0em auto;
+    transform: rotate(180deg);
+    overflow: hidden;
+}
+#circuloDerechoSuperior{
+    width: 72em;
+    height: 72em;
+    margin-top: -21em;
+    margin-left: 1.6em;
+    background-color: rgb(44, 41, 41);
+    border-radius: 50%;
+    transform: rotate(180deg);
+    background-color: coral;
 }
