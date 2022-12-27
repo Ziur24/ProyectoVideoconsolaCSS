@@ -82,7 +82,7 @@ body{
     border-radius: 50%;
     border: rgb(207, 206, 206) solid 10px;
     background-color: rgb(40, 41, 40);
-    /*box-shadow: inset 1em 0.3em 0.1em -0.1em rgb(216, 202, 202);*/
+    box-shadow: inset 0.2em 0.3em 0.4em -0.1em rgb(12, 12, 12), 0.7em 0.3em 0.4em 0.1em rgb(12, 12, 12);
     
 }
 
@@ -118,13 +118,22 @@ body{
 .botonDireccion1{
     display: flex;
     flex-direction: row;
-    background-color: rgb(245, 243, 243);
+    background-color: black;
     width: 2em;
     height: 2em;
     margin: -0.1em 0em 0em 1.2em;
-    border-radius: 20%;  
+    border-radius: 20%;
+    box-shadow: inset 0.4em 0.2em 0.4em -0.1em rgb(88, 85, 85);
     
 }
+#flechaDireccion{
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0.35em 0em 0em 0.3em; 
+    filter: invert(94%) sepia(19%) saturate(0%) hue-rotate(82deg) brightness(112%) contrast(100%);
+    transform: rotate(90deg);   
+}
+
 .botonForma1-1{
     display: flex;
     flex-direction: row;
@@ -138,22 +147,24 @@ body{
     display: flex;
     flex-direction: row;
     position: absolute;
-    background-color: rgb(245, 243, 243);
+    background-color: black;
     width: 1.55em;
     height: 1.55em;
     margin: 0.22em 0em 0em -0.65em;
     border-radius: 20%;
     transform: rotate(45deg);
+    box-shadow: inset 0.1em 0.2em 0.4em -0.1em rgb(88, 85, 85);
 }
 .botonDireccion2{
     display: flex;
     flex-direction: row;
-    background-color: rgb(245, 243, 243);
+    background-color: black;
     width: 2em;
     height: 2em;
     margin: 0em 1.2em 0em 0em;
     border-radius: 20%;
     transform: rotate(180deg);
+    box-shadow: inset 0.4em 0.2em 0.4em -0.1em rgb(88, 85, 85);
 }
 .botonForma2-1{
     display: flex;
@@ -168,12 +179,13 @@ body{
     display: flex;
     flex-direction: row;
     position: absolute;
-    background-color: rgb(245, 243, 243);
+    background-color: black;
     width: 1.55em;
     height: 1.55em;
     margin: 0.22em 0em 0em -0.65em;
     border-radius: 20%;
     transform: rotate(45deg);
+    box-shadow: inset 0.1em 0.2em 0.4em -0.1em rgb(88, 85, 85);
 }
 
 /* Dibujo botones de acción */
@@ -187,7 +199,7 @@ body{
     margin: -0.1em 0em 0em 0.6em;
     border-radius: 50%;
     padding: 0;
-    box-shadow: inset 0.5em 0.8em 0.5em -0.1em rgb(88, 85, 85);
+    box-shadow: inset 0.4em 0.2em 0.7em -0.1em rgb(88, 85, 85);
 }
 .botonAccion2{
     display: flex;
@@ -243,6 +255,7 @@ body{
     border-radius: 50%;
     margin: 1em 0em 0em 1em;
     background-color: black;
+    box-shadow: inset 0.1em 0.3em 0.7em -0.2em rgb(216, 202, 202), 0.1em 0.3em 0.7em -0.2em rgb(216, 202, 202);
 }
 #selectstart{
     
@@ -260,8 +273,8 @@ body{
     position: absolute;
     display: flex;
     flex-direction: row;
-    margin: 12em auto 0em 10em; /* 6 em */
-    display: none;
+    margin: 12em auto 0em 34.5em; /* 6 em */
+    
 }
 .lateralesSuperior{
     width: 5em;
@@ -284,7 +297,7 @@ body{
 }
 #parteCentralSuperior{
     margin: 0em auto 0em auto;
-    width: 50em;
+    width: 41em;
     height: 30em;
     background-color: coral;
 }
