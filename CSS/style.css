@@ -21,17 +21,20 @@ body{
 }
 /* Capa inferior consola */
 #capaInferior{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    margin: 12em auto 0em auto; /* 18em */
+    justify-content: center;
+    align-items: center;
 }
+
 .lateralesInferior{
     width: 5em;
     height: 30em;
    
 }
-#parteIzquierdaInferior{
-    margin: 0em auto 0em auto;
+#parteIzquierdaInferior{ 
     overflow: hidden;
 }
 #circuloIzquierdoInferior{
@@ -44,14 +47,12 @@ body{
 }
 #parteCentralInferior{
     display: flex;
-    margin: 0em 0em 0em 0em;
     width: 41em;
     height: 30em;
     background-color:rgb(44, 41, 41);
     background-color: brown;
 }
 #parteDerechaInferior{
-    margin: 0em auto 0em auto;
     transform: rotate(180deg);
     overflow: hidden;
 }
@@ -270,49 +271,106 @@ body{
 
 /* Capa superior consola */
 #capaSuperior{
+    width: 100%;
+    height: 100%;
     position: absolute;
     display: flex;
     flex-direction: row;
-    margin: 12em auto 0em 34.5em; /* 6 em */
-    
+    align-items: center;
+    justify-content: center;
 }
+
 .lateralesSuperior{
     width: 5em;
     height: 30em;
-  
+    overflow: hidden;
+    background-color: aqua;
 }
 #parteIzquierdaSuperior{
-    margin: 0em auto 0em auto;
-    
+    /*margin: 0em auto 0em auto;*/
     overflow: hidden;
+    
 }
 #circuloIzquierdoSuperior{
-    width: 72em;
+    display: flex;
+    width: 100em;
     height: 72em;
     margin-top: -21em;
-    margin-left: 1.6em;
+    margin-left: 0.4em;
     background-color: rgb(44, 41, 41);
     border-radius: 50%;
-    background-color: coral;
+    background-color: rgb(211, 27, 27);
+    /*box-shadow: inset 0.1em 0.2em 0.4em -0.1em rgb(216, 210, 210);*/
 }
+
 #parteCentralSuperior{
-    margin: 0em auto 0em auto;
+    
     width: 41em;
     height: 30em;
-    background-color: coral;
+    background-color: black;
+    /*box-shadow: inset 0.1em 0.2em 0.4em -0.1em rgb(216, 210, 210);*/
 }
+
+#btnEncendido{
+    width: 3em;
+    height: 4em;
+    margin: 40em 0em 0em 0.79em;  
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 0em ;
+    border-bottom-left-radius: 0em;
+    background-color: white;
+    transform: rotate(-14deg);
+    cursor: pointer;
+}
+
 #parteDerechaSuperior{
-    margin: 0em auto 0em auto;
+   
     transform: rotate(180deg);
     overflow: hidden;
 }
 #circuloDerechoSuperior{
-    width: 72em;
+    width: 100em;
     height: 72em;
     margin-top: -21em;
-    margin-left: 1.6em;
+    margin-left: 0.4em;
     background-color: rgb(44, 41, 41);
     border-radius: 50%;
     transform: rotate(180deg);
-    background-color: coral;
+    background-color: rgb(233, 11, 11);
 }
+
+
+/* Animaciones */
+
+@keyframes movConsolaControles{
+    from{
+        margin: 12em auto 0em auto;
+    }
+    to {
+        margin: 18em auto 0em auto;
+    }
+}
+
+@keyframes movConsolaPantalla{
+    from{
+        margin-top: 0em;
+    }
+    to {
+        margin-top: -8em;
+    }
+}
+
+/*#capaInferior :hover{
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-play-state: running, paused;
+    animation-name: movConsolaControles;
+}*/
+
+/*#capaSuperior :hover{
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-play-state: running, paused;
+    animation-name: movConsolaControles;
+}*/
