@@ -17,7 +17,6 @@ body{
     width: 100%;
     height: 100%;
     background-color: beige;
-    
 }
 /* Capa inferior consola */
 #capaInferior{
@@ -42,15 +41,14 @@ body{
     height: 72em;
     margin-top: -21em;
     margin-left: 1.6em;
-    background-color: rgb(44, 41, 41);
+    background-color: rgb(26, 25, 25);
     border-radius: 50%;
 }
 #parteCentralInferior{
     display: flex;
     width: 41em;
     height: 30em;
-    background-color:rgb(44, 41, 41);
-    background-color: brown;
+    background-color:rgb(26, 25, 25);
 }
 #parteDerechaInferior{
     transform: rotate(180deg);
@@ -61,7 +59,7 @@ body{
     height: 72em;
     margin-top: -21em;
     margin-left: 1.6em;
-    background-color: rgb(44, 41, 41);
+    background-color: rgb(26, 25, 25);
     border-radius: 50%;
     transform: rotate(180deg);
     
@@ -284,93 +282,84 @@ body{
     width: 5em;
     height: 30em;
     overflow: hidden;
-    background-color: aqua;
 }
-#parteIzquierdaSuperior{
-    /*margin: 0em auto 0em auto;*/
-    overflow: hidden;
-    
-}
+
 #circuloIzquierdoSuperior{
     display: flex;
     width: 100em;
     height: 72em;
     margin-top: -21em;
     margin-left: 0.4em;
-    background-color: rgb(44, 41, 41);
     border-radius: 50%;
-    background-color: rgb(211, 27, 27);
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
     /*box-shadow: inset 0.1em 0.2em 0.4em -0.1em rgb(216, 210, 210);*/
 }
 
 #parteCentralSuperior{
-    
+    display: flex;
     width: 41em;
     height: 30em;
-    background-color: black;
-    /*box-shadow: inset 0.1em 0.2em 0.4em -0.1em rgb(216, 210, 210);*/
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+}
+
+#display{
+    width: 90%;
+    height: 90%;
+    background-color: gray;
 }
 
 #btnEncendido{
     width: 3em;
     height: 4em;
-    margin: 40em 0em 0em 0.79em;  
+    margin: 40em 0em 0em 0.80em;  
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-left-radius: 0em ;
     border-bottom-left-radius: 0em;
-    background-color: white;
+    background-color: rgb(31, 29, 29);
     transform: rotate(-14deg);
     cursor: pointer;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-width: 0.2em;
+    border-color: rgb(95, 86, 86);   
+    overflow: hidden;
+}
+
+#btnLogo{
+    width: 90%;
+    height: 90%;
+    scale: .8;
+    border-radius: 50%;
+    filter: invert(94%) sepia(19%) saturate(0%) hue-rotate(82deg) brightness(112%) contrast(100%);
+    transform: rotate(12deg);
+}
+
+#ledEncendido{
+    width: 1.5em;
+    height: 0.8em;
+    margin: 27em 0em 0em -2.7em;
+    border-radius: 2em;
+    background-color: white
+
 }
 
 #parteDerechaSuperior{
-   
+    
     transform: rotate(180deg);
-    overflow: hidden;
+   
 }
+
 #circuloDerechoSuperior{
     width: 100em;
     height: 72em;
     margin-top: -21em;
     margin-left: 0.4em;
-    background-color: rgb(44, 41, 41);
     border-radius: 50%;
     transform: rotate(180deg);
-    background-color: rgb(233, 11, 11);
+    background-color: rgb(20, 20, 20);
 }
-
-
-/* Animaciones */
-
-@keyframes movConsolaControles{
-    from{
-        margin: 12em auto 0em auto;
-    }
-    to {
-        margin: 18em auto 0em auto;
-    }
-}
-
-@keyframes movConsolaPantalla{
-    from{
-        margin-top: 0em;
-    }
-    to {
-        margin-top: -8em;
-    }
-}
-
-/*#capaInferior :hover{
-    animation-delay: 0s;
-    animation-duration: 3s;
-    animation-play-state: running, paused;
-    animation-name: movConsolaControles;
-}*/
-
-/*#capaSuperior :hover{
-    animation-delay: 0s;
-    animation-duration: 3s;
-    animation-play-state: running, paused;
-    animation-name: movConsolaControles;
-}*/
