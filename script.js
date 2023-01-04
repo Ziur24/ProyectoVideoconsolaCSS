@@ -74,7 +74,7 @@ function mov(){
                 intervaloOk=false;
                 estado="on";
                 encender(estado);
-                
+                playVideo();
                 }
     } else {
 
@@ -100,6 +100,12 @@ function mov(){
 
 }
 
+/* Play video startup */
 
-   
-    
+let cntVideo = document.getElementById("display");
+
+function playVideo(){
+    cntVideo.play();
+}
+
+
