@@ -101,9 +101,9 @@ function mov(){
 }
 
 /* Play video startup */
-
 let cntVideo = document.getElementById("display");
 
 function playVideo(){
+   
     cntVideo.play();
 }
