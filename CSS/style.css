@@ -30,19 +30,20 @@ body{
     justify-content: center;
 }
 .lateralesInferior{
-    width: 5em;
+    width: 5.5em;
     height: 30em;
-}
-#parteIzquierdaInferior{ 
     overflow: hidden;
+
+    background-color: aqua;
 }
 #circuloIzquierdoInferior{
-    width: 72em;
-    height: 72em;
-    margin-top: -21em;
-    margin-left: 1.6em;
+    margin-top: -3.5em;
+    margin-left: 0.3em;
+    width: 25em;
+    height: 37em;
     background-color: rgb(26, 25, 25);
     border-radius: 50%;
+    background-color: blue;
 }
 #parteCentralInferior{
     display: flex;
@@ -54,16 +55,17 @@ body{
 }
 #parteDerechaInferior{
     transform: rotate(180deg);
-    overflow: hidden;
+    background-color: transparent;
 }
 #circuloDerechoInferior{
-    width: 72em;
-    height: 72em;
-    margin-top: -21em;
-    margin-left: 1.6em;
+    transform: rotate(180deg);
+    margin-top: -3.5em;
+    margin-left: 0.3em;
+    width: 25em;
+    height: 37em;
     background-color: rgb(26, 25, 25);
     border-radius: 50%;
-    transform: rotate(180deg);
+    background-color: blue;
 }
 
 /* Conjunto pad cruzeta atributos generales*/
@@ -298,21 +300,21 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
 .lateralesSuperior{
-    width: 5em;
+    width: 5.5em;
     height: 30em;
     overflow: hidden;
 }
 #circuloIzquierdoSuperior{
     display: flex;
-    width: 100em;
-    height: 72em;
-    margin-top: -21em;
-    margin-left: 0.4em;
+    margin-top: -3.5em;
+    margin-left: -0em;
+    width: 25em;
+    height: 37em;
     border-radius: 50%;
     background-color: rgb(20, 20, 20);
     overflow: hidden;
@@ -321,7 +323,7 @@ body{
 #parteCentralSuperior{
     display: flex;
     flex-direction: column;
-    width: 41em;
+    width: 40em;
     height: 30em;
     justify-content: center;
     align-items: center;
@@ -364,13 +366,13 @@ body{
 #btnEncendido{
     width: 3em;
     height: 4em;
-    margin: 40em 0em 0em 0.80em;  
+    margin: 24em 0em 0em 1.4em;  
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-left-radius: 0em ;
     border-bottom-left-radius: 0em;
     background-color: rgb(31, 29, 29);
-    transform: rotate(-14deg);
+    transform: rotate(-19deg);
     cursor: pointer;
     border-bottom-style: solid;
     border-top-style: solid;
@@ -385,25 +387,51 @@ body{
     scale: .8;
     border-radius: 50%;
     filter: invert(94%) sepia(19%) saturate(0%) hue-rotate(82deg) brightness(112%) contrast(100%);
-    transform: rotate(12deg);
+    transform: rotate(17deg);
 }
 #ledEncendido{
     width: 1.5em;
     height: 0.8em;
-    margin: 27em 0em 0em -2.7em;
+    margin: 10em 0em 0em -2.7em;
     border-radius: 2em;
     background-color: white
 }
+
+.speaker{
+    display: grid;
+    width: 2em;
+    height: 2em;
+    margin: 14em 0em 0em -2.7em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    transform: rotate(45deg);
+    grid-gap: 0.1em;
+}
+
+#speakerderecho{
+   
+    margin: 14em 0em 0em 21em;
+}
+.orificio{
+    width: 0.7em;
+    height: 0.7em;
+    background-color: white;
+    border-radius: 1em;
+}
+
 #parteDerechaSuperior{
-    transform: rotate(180deg);
+ transform: rotate(180deg);
 }
 #circuloDerechoSuperior{
-    width: 100em;
-    height: 72em;
-    margin-top: -21em;
-    margin-left: 0.4em;
+    display: flex;
+    margin-top: -3.4em;
+    margin-left: 0.3em;
+    width: 25em;
+    height: 37em;
     border-radius: 50%;
-    transform: rotate(180deg);
     background-color: rgb(20, 20, 20);
-    box-shadow: inset 0.2em 0.6em 0.6em 0em rgb(216, 210, 210);
+    overflow: hidden;
+    transform: rotate(180deg);
+    box-shadow: inset 0.1em 0.6em 0.4em -0.1em rgb(216, 210, 210);
+
 }
