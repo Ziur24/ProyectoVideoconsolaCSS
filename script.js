@@ -57,14 +57,14 @@ function mov(){
     
     
     if (estado=="off"){
-
-        if (posicion(parteInferior)<110 && contGrupo <=230){
+        
+        if (parteInferior.style.marginTop != "6em"){
             contGrupo++;
             parteSuperior.style.top = contGrupo * 0.03 + "em";
             parteInferior.style.marginTop = contGrupo * 0.03 + "em";
             }
         
-        else if (posicion(parteSuperior)>-110 && contGrupo >-230){
+        else if (parteSuperior.style.top != "-6.3em"){
                 contGrupo--;
                 parteSuperior.style.top = contGrupo * 0.03 + "em";
                 }
@@ -107,5 +107,3 @@ let cntVideo = document.getElementById("display");
 function playVideo(){
     cntVideo.play();
 }
-
-
